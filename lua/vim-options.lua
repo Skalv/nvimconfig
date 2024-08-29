@@ -7,3 +7,9 @@ vim.g.mapleader = " "
 
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.wo.cursorline = true
+
+
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+

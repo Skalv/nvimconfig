@@ -1,4 +1,3 @@
-
 return {
   {
     "catppuccin/nvim",
@@ -6,7 +5,16 @@ return {
     name = "catppuccin",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme "catppuccin-mocha"
-    end
-  }
+      require("catppuccin").setup({
+        custom_highlights = function(colors)
+          return {
+            LineNr = { fg = colors.peach },
+            LineNrAbove = { fg = colors.subtext1 },
+            LineNrBelow = { fg = colors.subtext1 },
+          }
+        end,
+      })
+      vim.cmd.colorscheme("catppuccin-mocha")
+    end,
+  },
 }
