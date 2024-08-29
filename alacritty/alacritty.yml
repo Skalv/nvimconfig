@@ -1,0 +1,7 @@
+env:
+  TERM: alacritty-direct
+
+font:
+  normal:
+    family: ComicShannsMono Nerd Font Mono
+    style: Regular
